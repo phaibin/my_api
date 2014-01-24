@@ -1,4 +1,5 @@
 MyApi::Application.routes.draw do
+  resources :tasks, except: [:new, :edit]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +54,7 @@ MyApi::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # get 'cities' => 'cities#index'
+  resources :cities
 end
