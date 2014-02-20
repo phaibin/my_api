@@ -1,5 +1,4 @@
-JBuilder.encode do |json|
-json.array! @cities do |city|
-  json.id city.id
-end
-end
+json.message "success"
+json.code 200
+json.header ""
+json.result @result
